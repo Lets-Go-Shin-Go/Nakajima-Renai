@@ -50,6 +50,8 @@
 		F57582B51D0C2D1200B7C29A /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582B41D0C2D1200B7C29A /* GroupViewController.swift */; };
 		F57582B71D0C2D3C00B7C29A /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582B61D0C2D3C00B7C29A /* UserViewController.swift */; };
 		F57582B91D0C2E3E00B7C29A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582B81D0C2E3E00B7C29A /* LoginViewController.swift */; };
+		F57582BC1D0C4CD500B7C29A /* heart_off.png in Resources */ = {isa = PBXBuildFile; fileRef = F57582BA1D0C4CD500B7C29A /* heart_off.png */; };
+		F57582BD1D0C4CD500B7C29A /* heart_on.png in Resources */ = {isa = PBXBuildFile; fileRef = F57582BB1D0C4CD500B7C29A /* heart_on.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		F57582B41D0C2D1200B7C29A /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		F57582B61D0C2D3C00B7C29A /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		F57582B81D0C2E3E00B7C29A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F57582BA1D0C4CD500B7C29A /* heart_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_off.png; sourceTree = "<group>"; };
+		F57582BB1D0C4CD500B7C29A /* heart_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_on.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,7 +321,7 @@
 				TargetAttributes = {
 					7CC2569F1D0BBB6B007E1720 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = NR9AV5HS93;
+						DevelopmentTeam = 565CL88MF2;
 					};
 					7CC256B31D0BBB6B007E1720 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -375,6 +379,8 @@
 				F559F9E71D0BE9BE00BE1396 /* nakajima_button_group.png in Resources */,
 				7CC256D71D0BC121007E1720 /* GroupViewController.storyboard in Resources */,
 				F559F9E91D0BE9BE00BE1396 /* nakajima_button_result.png in Resources */,
+				F57582BC1D0C4CD500B7C29A /* heart_off.png in Resources */,
+				F57582BD1D0C4CD500B7C29A /* heart_on.png in Resources */,
 				7CC256E11D0BC1B0007E1720 /* LoginViewController.storyboard in Resources */,
 				7CC256D51D0BC0FA007E1720 /* ResultViewController.storyboard in Resources */,
 				7CC256DD1D0BC16C007E1720 /* UserViewController.storyboard in Resources */,

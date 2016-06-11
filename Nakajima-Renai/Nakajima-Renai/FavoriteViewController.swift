@@ -112,6 +112,8 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
             cell.layoutMargins = UIEdgeInsetsZero
         }
         
+        //cell.heartButton.frame = CGRectMake(0,0,70,70)
+        
         return cell
     }
     

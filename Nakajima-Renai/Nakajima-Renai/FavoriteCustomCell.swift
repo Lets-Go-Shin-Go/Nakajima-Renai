@@ -13,18 +13,26 @@ class FavoriteCustomCell: UITableViewCell {
     @IBOutlet weak var userName:UILabel!
     @IBOutlet weak var heartButton: UIButton!
     
+    @IBOutlet weak var pic2:UIImageView!
+    
     func setCell(link: Link) {
         self.userName.text = link.userName
         
         if let picName = link.picName {
-            // Cellに使用するサムネイル画像のUIImageの生成(非同期読み込み)
-            /*
-            let url = NSURL(string: picName)
-            let req = NSURLRequest(URL:url!)
-            */
-            //NSURLConnection.sendAsynchronousRequest(req, queue:NSOperationQueue.mainQueue()){(res, data, err) in
             self.pic.image = UIImage(named: picName)
-           // }
+        }
+        
+        heartButton.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
+        self.pic2.image = UIImage(named: "heart_off.png")
+        
+    }
+    
+    internal func onClickMyButton(sender: UIButton){
+        heartButton.selected = !heartButton.selected
+        if heartButton.selected{
+            self.pic2.image = UIImage(named: "heart_on.png")
+        }else{
+            self.pic2.image = UIImage(named: "heart_off.png")
         }
     }
 }
