@@ -49,6 +49,8 @@ class ViewController: UIViewController {
         let appInfoViewController: MenuViewController = storyboard.instantiateViewControllerWithIdentifier("menu") as! MenuViewController
         self.navigationController?.pushViewController(appInfoViewController, animated: true)
     }
+    
+    
 
 }
 

@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //titleView
-        titleStoryboard = UIStoryboard(name: "TitleViewController", bundle: NSBundle.mainBundle())
-        let ViewController: UIViewController = titleStoryboard.instantiateViewControllerWithIdentifier("title") as UIViewController
+        titleStoryboard = UIStoryboard(name: "MissionListViewController", bundle: NSBundle.mainBundle())
+        let ViewController: UIViewController = titleStoryboard.instantiateViewControllerWithIdentifier("missionlist") as UIViewController
         self.navigationController0 = UINavigationController(rootViewController: ViewController)
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)

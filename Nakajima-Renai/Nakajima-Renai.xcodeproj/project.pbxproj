@@ -22,6 +22,8 @@
 		7CC256DD1D0BC16C007E1720 /* UserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256DC1D0BC16C007E1720 /* UserViewController.storyboard */; };
 		7CC256DF1D0BC199007E1720 /* MissionDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256DE1D0BC199007E1720 /* MissionDetailViewController.storyboard */; };
 		7CC256E11D0BC1B0007E1720 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */; };
+		9CF9720D1D0BEB3800BF1D0B /* MissionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF9720C1D0BEB3800BF1D0B /* MissionListViewController.swift */; };
+		9CF9720F1D0BF13300BF1D0B /* MissionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF9720E1D0BF13300BF1D0B /* MissionDetailViewController.swift */; };
 		F559F9DE1D0BD76900BE1396 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F559F9DD1D0BD76900BE1396 /* MenuViewController.swift */; };
 		F559F9E61D0BE9BE00BE1396 /* nakajima_button_favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = F559F9E01D0BE9BE00BE1396 /* nakajima_button_favorite.png */; };
 		F559F9E71D0BE9BE00BE1396 /* nakajima_button_group.png in Resources */ = {isa = PBXBuildFile; fileRef = F559F9E11D0BE9BE00BE1396 /* nakajima_button_group.png */; };
@@ -70,6 +72,8 @@
 		7CC256DC1D0BC16C007E1720 /* UserViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserViewController.storyboard; sourceTree = "<group>"; };
 		7CC256DE1D0BC199007E1720 /* MissionDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MissionDetailViewController.storyboard; sourceTree = "<group>"; };
 		7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		9CF9720C1D0BEB3800BF1D0B /* MissionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionListViewController.swift; sourceTree = "<group>"; };
+		9CF9720E1D0BF13300BF1D0B /* MissionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionDetailViewController.swift; sourceTree = "<group>"; };
 		F559F9DD1D0BD76900BE1396 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F559F9E01D0BE9BE00BE1396 /* nakajima_button_favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nakajima_button_favorite.png; sourceTree = "<group>"; };
 		F559F9E11D0BE9BE00BE1396 /* nakajima_button_group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nakajima_button_group.png; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 				7CC256A31D0BBB6B007E1720 /* AppDelegate.swift */,
 				7CC256A51D0BBB6B007E1720 /* ViewController.swift */,
 				F559F9DD1D0BD76900BE1396 /* MenuViewController.swift */,
+				9CF9720C1D0BEB3800BF1D0B /* MissionListViewController.swift */,
+				9CF9720E1D0BF13300BF1D0B /* MissionDetailViewController.swift */,
 				7CC256AA1D0BBB6B007E1720 /* Assets.xcassets */,
 				7CC256AC1D0BBB6B007E1720 /* LaunchScreen.storyboard */,
 				7CC256AF1D0BBB6B007E1720 /* Info.plist */,
@@ -332,9 +338,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF9720F1D0BF13300BF1D0B /* MissionDetailViewController.swift in Sources */,
 				7CC256A61D0BBB6B007E1720 /* ViewController.swift in Sources */,
 				F559F9DE1D0BD76900BE1396 /* MenuViewController.swift in Sources */,
 				7CC256A41D0BBB6B007E1720 /* AppDelegate.swift in Sources */,
+				9CF9720D1D0BEB3800BF1D0B /* MissionListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
