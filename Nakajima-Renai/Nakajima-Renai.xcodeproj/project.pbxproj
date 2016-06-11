@@ -17,6 +17,7 @@
 		7C761ED51D0C774E006AEA05 /* Nheart01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C761ED21D0C774E006AEA05 /* Nheart01.png */; };
 		7C761ED61D0C774E006AEA05 /* Nheart02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C761ED31D0C774E006AEA05 /* Nheart02.png */; };
 		7C761ED71D0C774E006AEA05 /* Nheart03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C761ED41D0C774E006AEA05 /* Nheart03.png */; };
+		7C761ED91D0C77F8006AEA05 /* Congratulations.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C761ED81D0C77F8006AEA05 /* Congratulations.png */; };
 		7CC256A41D0BBB6B007E1720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC256A31D0BBB6B007E1720 /* AppDelegate.swift */; };
 		7CC256A61D0BBB6B007E1720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC256A51D0BBB6B007E1720 /* ViewController.swift */; };
 		7CC256A91D0BBB6B007E1720 /* TitleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256A71D0BBB6B007E1720 /* TitleViewController.storyboard */; };
@@ -79,6 +80,7 @@
 		7C761ED21D0C774E006AEA05 /* Nheart01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nheart01.png; sourceTree = "<group>"; };
 		7C761ED31D0C774E006AEA05 /* Nheart02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nheart02.png; sourceTree = "<group>"; };
 		7C761ED41D0C774E006AEA05 /* Nheart03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nheart03.png; sourceTree = "<group>"; };
+		7C761ED81D0C77F8006AEA05 /* Congratulations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Congratulations.png; sourceTree = "<group>"; };
 		7CC256A01D0BBB6B007E1720 /* Nakajima-Renai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nakajima-Renai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC256A31D0BBB6B007E1720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CC256A51D0BBB6B007E1720 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				7C761ED21D0C774E006AEA05 /* Nheart01.png */,
 				7C761ED31D0C774E006AEA05 /* Nheart02.png */,
 				7C761ED41D0C774E006AEA05 /* Nheart03.png */,
+				7C761ED81D0C77F8006AEA05 /* Congratulations.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				7C761ED51D0C774E006AEA05 /* Nheart01.png in Resources */,
 				7CC256E11D0BC1B0007E1720 /* LoginViewController.storyboard in Resources */,
 				7C761ED71D0C774E006AEA05 /* Nheart03.png in Resources */,
+				7C761ED91D0C77F8006AEA05 /* Congratulations.png in Resources */,
 				7CC256D51D0BC0FA007E1720 /* ResultViewController.storyboard in Resources */,
 				7CC256DD1D0BC16C007E1720 /* UserViewController.storyboard in Resources */,
 				7C761EC11D0C3888006AEA05 /* ResultListViewController.storyboard in Resources */,

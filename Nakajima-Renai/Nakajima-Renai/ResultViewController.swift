@@ -11,10 +11,12 @@ import UIKit
 class ResultViewController: UIViewController{
     
     var flag:Int?
+    @IBOutlet weak var resultImage: UIImageView!
     
         override func viewDidLoad() {
             if(flag == 0){
                 createHappyParticles()
+                self.resultImage.image = UIImage(named: "Congratulations")
             }else{
                 createUnhappyParticles()
             }

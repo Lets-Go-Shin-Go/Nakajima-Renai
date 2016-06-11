@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-ul-lnh">
-                                <rect key="frame" x="0.0" y="344" width="375" height="73"/>
+                                <rect key="frame" x="0.0" y="344" width="375" height="130"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="8NW-pf-4Ez">
                                 <rect key="frame" x="35" y="84" width="305" height="194"/>
@@ -27,6 +27,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="resultImage" destination="9sc-ul-lnh" id="8zA-p0-Zbc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O0u-hT-bIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
