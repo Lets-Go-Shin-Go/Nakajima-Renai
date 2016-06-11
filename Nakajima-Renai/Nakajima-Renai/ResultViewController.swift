@@ -9,12 +9,20 @@
 import UIKit
 
 class ResultViewController: UIViewController{
-        
+    
+    var flag:Int?
+    @IBOutlet weak var resultImage: UIImageView!
+    
         override func viewDidLoad() {
-            createParticles()
+            if(flag == 0){
+                createHappyParticles()
+                self.resultImage.image = UIImage(named: "Congratulations")
+            }else{
+                createUnhappyParticles()
+            }
         }
         
-        func createParticles() {
+        func createHappyParticles() {
             let particleEmitter = CAEmitterLayer()
             
             particleEmitter.emitterPosition = CGPoint(x: view.center.x, y: 700)
@@ -27,10 +35,27 @@ class ResultViewController: UIViewController{
             
             particleEmitter.emitterCells = [red, green, blue]
             view.layer.addSublayer(particleEmitter)
-            
-            
         }
+    
+    
+    func createUnhappyParticles() {
+        let particleEmitter = CAEmitterLayer()
         
+        particleEmitter.emitterPosition = CGPoint(x: view.center.x, y: 700)
+        particleEmitter.emitterShape = kCAEmitterLayerLine
+        particleEmitter.emitterSize = CGSize(width: view.frame.size.width, height: 1)
+        
+        let red = makeEmitterCellWithColor("Nheart01")
+        let green = makeEmitterCellWithColor("Nheart02")
+        let blue = makeEmitterCellWithColor("Nheart03")
+        
+        particleEmitter.emitterCells = [red, green, blue]
+        view.layer.addSublayer(particleEmitter)
+        
+        
+    }
+
+    
         func makeEmitterCellWithColor(image: String) -> CAEmitterCell {
             let cell = CAEmitterCell()
             cell.lifetime = 13.0
