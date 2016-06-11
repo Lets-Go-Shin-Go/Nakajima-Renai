@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		7CC256A41D0BBB6B007E1720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC256A31D0BBB6B007E1720 /* AppDelegate.swift */; };
 		7CC256A61D0BBB6B007E1720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC256A51D0BBB6B007E1720 /* ViewController.swift */; };
-		7CC256A91D0BBB6B007E1720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256A71D0BBB6B007E1720 /* Main.storyboard */; };
+		7CC256A91D0BBB6B007E1720 /* TitleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256A71D0BBB6B007E1720 /* TitleViewController.storyboard */; };
 		7CC256AB1D0BBB6B007E1720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256AA1D0BBB6B007E1720 /* Assets.xcassets */; };
 		7CC256AE1D0BBB6B007E1720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256AC1D0BBB6B007E1720 /* LaunchScreen.storyboard */; };
 		7CC256B91D0BBB6B007E1720 /* Nakajima_RenaiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC256B81D0BBB6B007E1720 /* Nakajima_RenaiTests.swift */; };
 		7CC256C41D0BBB6B007E1720 /* Nakajima_RenaiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC256C31D0BBB6B007E1720 /* Nakajima_RenaiUITests.swift */; };
+		7CC256D31D0BC0A7007E1720 /* MenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256D21D0BC0A7007E1720 /* MenuViewController.storyboard */; };
+		7CC256D51D0BC0FA007E1720 /* ResultViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256D41D0BC0FA007E1720 /* ResultViewController.storyboard */; };
+		7CC256D71D0BC121007E1720 /* GroupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256D61D0BC121007E1720 /* GroupViewController.storyboard */; };
+		7CC256D91D0BC14B007E1720 /* MissionListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256D81D0BC14B007E1720 /* MissionListViewController.storyboard */; };
+		7CC256DB1D0BC15D007E1720 /* FavoriteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256DA1D0BC15D007E1720 /* FavoriteViewController.storyboard */; };
+		7CC256DD1D0BC16C007E1720 /* UserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256DC1D0BC16C007E1720 /* UserViewController.storyboard */; };
+		7CC256DF1D0BC199007E1720 /* MissionDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256DE1D0BC199007E1720 /* MissionDetailViewController.storyboard */; };
+		7CC256E11D0BC1B0007E1720 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +45,7 @@
 		7CC256A01D0BBB6B007E1720 /* Nakajima-Renai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nakajima-Renai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC256A31D0BBB6B007E1720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CC256A51D0BBB6B007E1720 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7CC256A81D0BBB6B007E1720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CC256A81D0BBB6B007E1720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TitleViewController.storyboard; sourceTree = "<group>"; };
 		7CC256AA1D0BBB6B007E1720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CC256AD1D0BBB6B007E1720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CC256AF1D0BBB6B007E1720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +55,14 @@
 		7CC256BF1D0BBB6B007E1720 /* Nakajima-RenaiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nakajima-RenaiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC256C31D0BBB6B007E1720 /* Nakajima_RenaiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nakajima_RenaiUITests.swift; sourceTree = "<group>"; };
 		7CC256C51D0BBB6B007E1720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC256D21D0BC0A7007E1720 /* MenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuViewController.storyboard; sourceTree = "<group>"; };
+		7CC256D41D0BC0FA007E1720 /* ResultViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultViewController.storyboard; sourceTree = "<group>"; };
+		7CC256D61D0BC121007E1720 /* GroupViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GroupViewController.storyboard; sourceTree = "<group>"; };
+		7CC256D81D0BC14B007E1720 /* MissionListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MissionListViewController.storyboard; sourceTree = "<group>"; };
+		7CC256DA1D0BC15D007E1720 /* FavoriteViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavoriteViewController.storyboard; sourceTree = "<group>"; };
+		7CC256DC1D0BC16C007E1720 /* UserViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserViewController.storyboard; sourceTree = "<group>"; };
+		7CC256DE1D0BC199007E1720 /* MissionDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MissionDetailViewController.storyboard; sourceTree = "<group>"; };
+		7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,7 @@
 		7CC256971D0BBB6B007E1720 = {
 			isa = PBXGroup;
 			children = (
+				7CC256D11D0BBFD4007E1720 /* storyboard */,
 				7CC256A21D0BBB6B007E1720 /* Nakajima-Renai */,
 				7CC256B71D0BBB6B007E1720 /* Nakajima-RenaiTests */,
 				7CC256C21D0BBB6B007E1720 /* Nakajima-RenaiUITests */,
@@ -99,7 +116,6 @@
 			children = (
 				7CC256A31D0BBB6B007E1720 /* AppDelegate.swift */,
 				7CC256A51D0BBB6B007E1720 /* ViewController.swift */,
-				7CC256A71D0BBB6B007E1720 /* Main.storyboard */,
 				7CC256AA1D0BBB6B007E1720 /* Assets.xcassets */,
 				7CC256AC1D0BBB6B007E1720 /* LaunchScreen.storyboard */,
 				7CC256AF1D0BBB6B007E1720 /* Info.plist */,
@@ -123,6 +139,22 @@
 				7CC256C51D0BBB6B007E1720 /* Info.plist */,
 			);
 			path = "Nakajima-RenaiUITests";
+			sourceTree = "<group>";
+		};
+		7CC256D11D0BBFD4007E1720 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7CC256A71D0BBB6B007E1720 /* TitleViewController.storyboard */,
+				7CC256D21D0BC0A7007E1720 /* MenuViewController.storyboard */,
+				7CC256D41D0BC0FA007E1720 /* ResultViewController.storyboard */,
+				7CC256D61D0BC121007E1720 /* GroupViewController.storyboard */,
+				7CC256D81D0BC14B007E1720 /* MissionListViewController.storyboard */,
+				7CC256DA1D0BC15D007E1720 /* FavoriteViewController.storyboard */,
+				7CC256DC1D0BC16C007E1720 /* UserViewController.storyboard */,
+				7CC256DE1D0BC199007E1720 /* MissionDetailViewController.storyboard */,
+				7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */,
+			);
+			name = storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +261,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC256D91D0BC14B007E1720 /* MissionListViewController.storyboard in Resources */,
 				7CC256AE1D0BBB6B007E1720 /* LaunchScreen.storyboard in Resources */,
+				7CC256D31D0BC0A7007E1720 /* MenuViewController.storyboard in Resources */,
+				7CC256DF1D0BC199007E1720 /* MissionDetailViewController.storyboard in Resources */,
 				7CC256AB1D0BBB6B007E1720 /* Assets.xcassets in Resources */,
-				7CC256A91D0BBB6B007E1720 /* Main.storyboard in Resources */,
+				7CC256D71D0BC121007E1720 /* GroupViewController.storyboard in Resources */,
+				7CC256DB1D0BC15D007E1720 /* FavoriteViewController.storyboard in Resources */,
+				7CC256E11D0BC1B0007E1720 /* LoginViewController.storyboard in Resources */,
+				7CC256D51D0BC0FA007E1720 /* ResultViewController.storyboard in Resources */,
+				7CC256DD1D0BC16C007E1720 /* UserViewController.storyboard in Resources */,
+				7CC256A91D0BBB6B007E1720 /* TitleViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +333,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7CC256A71D0BBB6B007E1720 /* Main.storyboard */ = {
+		7CC256A71D0BBB6B007E1720 /* TitleViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7CC256A81D0BBB6B007E1720 /* Base */,
 			);
-			name = Main.storyboard;
+			name = TitleViewController.storyboard;
+			path = "Nakajima-Renai";
 			sourceTree = "<group>";
 		};
 		7CC256AC1D0BBB6B007E1720 /* LaunchScreen.storyboard */ = {
