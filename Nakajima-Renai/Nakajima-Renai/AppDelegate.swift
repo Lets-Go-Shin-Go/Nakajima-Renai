@@ -12,10 +12,34 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var myNavigationController: UINavigationController?
+    
+    var navigationController0: UINavigationController?
+    var titleStoryboard: UIStoryboard = UIStoryboard()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        /*
+        let first: ViewController = ViewController()
+        myNavigationController = UINavigationController(rootViewController: first)
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.rootViewController = myNavigationController
+        self.window?.makeKeyAndVisible()
+        */
+        
+        //titleView
+        titleStoryboard = UIStoryboard(name: "TitleViewController", bundle: NSBundle.mainBundle())
+        let ViewController: UIViewController = titleStoryboard.instantiateViewControllerWithIdentifier("title") as UIViewController
+        self.navigationController0 = UINavigationController(rootViewController: ViewController)
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.rootViewController = navigationController0
+        self.window?.makeKeyAndVisible()
+        
+        //let firstView: ViewController = ViewController()
+        
         return true
     }
 

@@ -22,6 +22,7 @@
 		7CC256DD1D0BC16C007E1720 /* UserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256DC1D0BC16C007E1720 /* UserViewController.storyboard */; };
 		7CC256DF1D0BC199007E1720 /* MissionDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256DE1D0BC199007E1720 /* MissionDetailViewController.storyboard */; };
 		7CC256E11D0BC1B0007E1720 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */; };
+		F559F9DE1D0BD76900BE1396 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F559F9DD1D0BD76900BE1396 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		7CC256DC1D0BC16C007E1720 /* UserViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserViewController.storyboard; sourceTree = "<group>"; };
 		7CC256DE1D0BC199007E1720 /* MissionDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MissionDetailViewController.storyboard; sourceTree = "<group>"; };
 		7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		F559F9DD1D0BD76900BE1396 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				7CC256A31D0BBB6B007E1720 /* AppDelegate.swift */,
 				7CC256A51D0BBB6B007E1720 /* ViewController.swift */,
+				F559F9DD1D0BD76900BE1396 /* MenuViewController.swift */,
 				7CC256AA1D0BBB6B007E1720 /* Assets.xcassets */,
 				7CC256AC1D0BBB6B007E1720 /* LaunchScreen.storyboard */,
 				7CC256AF1D0BBB6B007E1720 /* Info.plist */,
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CC256A61D0BBB6B007E1720 /* ViewController.swift in Sources */,
+				F559F9DE1D0BD76900BE1396 /* MenuViewController.swift in Sources */,
 				7CC256A41D0BBB6B007E1720 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +527,7 @@
 				7CC256CA1D0BBB6B007E1720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CC256CB1D0BBB6B007E1720 /* Build configuration list for PBXNativeTarget "Nakajima-RenaiTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +536,7 @@
 				7CC256CD1D0BBB6B007E1720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CC256CE1D0BBB6B007E1720 /* Build configuration list for PBXNativeTarget "Nakajima-RenaiUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +545,7 @@
 				7CC256D01D0BBB6B007E1720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
