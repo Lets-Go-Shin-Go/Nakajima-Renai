@@ -77,20 +77,12 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(table: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
         print("Num: \(indexPath.row)")
-        /*
-        var num = 0
-        let storyboard = UIStoryboard(name: "DetailViewController", bundle: NSBundle.mainBundle())
-        let detailViewController: DetailViewController = storyboard.instantiateViewControllerWithIdentifier("detail") as! DetailViewController
+        let storyboard = UIStoryboard(name: "UserViewController", bundle: NSBundle.mainBundle())
+        let userViewController: UserViewController = storyboard.instantiateViewControllerWithIdentifier("user") as! UserViewController
         
-        // appDelegateのspotsにおける選択されたスポットのインデックス番号を取得する
-        for data in appDelegate.spots{
-            if (data.name == selectedspots[indexPath.row].name){
-                detailViewController.spotNum = num
-            }
-            num++
-        }
+        userViewController.ID = indexPath.row
         
-        self.navigationController?.pushViewController(detailViewController, animated: true)*/
+        self.navigationController?.pushViewController(userViewController, animated: true)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
