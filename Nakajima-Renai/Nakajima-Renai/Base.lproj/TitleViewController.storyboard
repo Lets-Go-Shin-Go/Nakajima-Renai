@@ -18,11 +18,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joh-lf-CEU">
-                                <rect key="frame" x="0.0" y="606" width="414" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.79322132164867376" blue="0.36109427163483976" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="591" width="414" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.60945145698359582" blue="0.13612434251228533" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="gaJ-Wz-ztV"/>
+                                    <constraint firstAttribute="height" constant="45" id="gaJ-Wz-ztV"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="ログイン">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -40,6 +41,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="OOV-BL-nPx"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="loginButton" destination="joh-lf-CEU" id="vOl-lF-Tf1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

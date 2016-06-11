@@ -68,6 +68,9 @@ class MenuViewController: UIViewController {
         GroupBtn.tag = 0
         //ボタンを押した時の処理を追加
         GroupBtn.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
+        //ボタンに影をつける
+        GroupBtn.layer.shadowOffset = CGSizeMake(0.0, 3.0)
+        GroupBtn.layer.shadowOpacity = 0.5
         //Viewに追加
         self.view.addSubview(GroupBtn)
         
@@ -83,6 +86,9 @@ class MenuViewController: UIViewController {
         MissionBtn.tag = 1
         //ボタンを押した時の処理を追加
         MissionBtn.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
+        //ボタンに影をつける
+        MissionBtn.layer.shadowOffset = CGSizeMake(0.0, 3.0)
+        MissionBtn.layer.shadowOpacity = 0.5
         //Viewに追加
         self.view.addSubview(MissionBtn)
 
@@ -98,6 +104,9 @@ class MenuViewController: UIViewController {
         FavoriteBtn.tag = 2
         //ボタンを押した時の処理を追加
         FavoriteBtn.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
+        //ボタンに影をつける
+        FavoriteBtn.layer.shadowOffset = CGSizeMake(0.0, 3.0)
+        FavoriteBtn.layer.shadowOpacity = 0.5
         //Viewに追加
         self.view.addSubview(FavoriteBtn)
         
@@ -112,7 +121,10 @@ class MenuViewController: UIViewController {
         //タグ
         ResultBtn.tag = 3
         //ボタンを押した時の処理を追加
-        ResultBtn.addTarget(self, action: "onClickWifiTaxButton:", forControlEvents: .TouchUpInside)
+        ResultBtn.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
+        //ボタンに影をつける
+        ResultBtn.layer.shadowOffset = CGSizeMake(0.0, 3.0)
+        ResultBtn.layer.shadowOpacity = 0.5
         //Viewに追加
         self.view.addSubview(ResultBtn)
         
@@ -132,18 +144,42 @@ class MenuViewController: UIViewController {
     
     //ボタンの処理（次のビューへ移動）
     internal func onClickButton(sender: UIButton){
-        /*
-        let storyboard = UIStoryboard(name: "SpotListViewController", bundle: NSBundle.mainBundle())
-        
-        let spotListViewController : UIViewController = storyboard.instantiateViewControllerWithIdentifier("spotlist")
-        Tag = String(category[sender.tag])
-        print("Tag:" + Tag)
-        
-        // 選択したカテゴリを渡す
-        appDelegate.categoryTag = Tag
-        
-        self.navigationController?.pushViewController(spotListViewController, animated: true)
-        */
+        switch sender.tag{
+        case 0:
+            break
+            /*
+            //GroupViewへ遷移
+            let storyboard = UIStoryboard(name: "GroupViewController", bundle: NSBundle.mainBundle())
+            let viewController: GroupViewController = storyboard.instantiateViewControllerWithIdentifier("group") as! GroupViewController
+            self.navigationController?.pushViewController(viewController, animated: true)
+            */
+        case 1:
+            break
+            /*
+            //MissionViewへ遷移
+            let storyboard = UIStoryboard(name: "MissionViewController", bundle: NSBundle.mainBundle())
+            let viewController: MissionViewController = storyboard.instantiateViewControllerWithIdentifier("missionlist") as! MissonViewController
+            self.navigationController?.pushViewController(viewController, animated: true)
+            */
+        case 2:
+            break
+            /*
+            //FavoriteViewへ遷移
+            let storyboard = UIStoryboard(name: "FavoriteViewController", bundle: NSBundle.mainBundle())
+            let viewController: FavoriteViewController = storyboard.instantiateViewControllerWithIdentifier("favorite") as! FavoriteViewController
+            self.navigationController?.pushViewController(viewController, animated: true)
+            */
+        case 3:
+            break
+            /*
+            //ResultViewへ遷移
+            let storyboard = UIStoryboard(name: "ResultViewController", bundle: NSBundle.mainBundle())
+            let viewController: ResultViewController = storyboard.instantiateViewControllerWithIdentifier("result") as! ResultViewController
+            self.navigationController?.pushViewController(viewController, animated: true)
+            */
+        default:
+            break
+        }
     }
     
     
