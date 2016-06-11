@@ -22,13 +22,18 @@ class ViewController: UIViewController {
         self.title = "Title"
         
         //背景画像の設定
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "nakajima_TitleBackImage.png")?.drawInRect(self.view.bounds)
-        let image: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        self.view.backgroundColor = UIColor(patternImage: image)
-        loginButton.layer.shadowOffset = CGSizeMake(0.0, 5.0)
+        
+        let myImage = UIImage(named: "nakajima_TitleBackImage.png")
+        let myImageView = UIImageView()
+        myImageView.image = myImage!
+        myImageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
+        
+        self.view.addSubview(myImageView)
+        self.view.sendSubviewToBack(myImageView)
+        
+        loginButton.layer.shadowOffset = CGSizeMake(0.0, 3.0)
         loginButton.layer.shadowOpacity = 0.5
+
         
     }
     

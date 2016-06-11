@@ -23,11 +23,12 @@ class MenuViewController: UIViewController {
         self.title = "メニュー"
         
         //背景画像の設定
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "nakajima_MenuBackImage.png")?.drawInRect(self.view.bounds)
-        let image: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        self.view.backgroundColor = UIColor(patternImage: image)
+        let myImage = UIImage(named: "nakajima_MenuBackImage.png")
+        let myImageView = UIImageView()
+        myImageView.image = myImage!
+        myImageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
+        self.view.addSubview(myImageView)
+        self.view.sendSubviewToBack(myImageView)
         
         GroupBtn = UIButton()
         MissionBtn = UIButton()
