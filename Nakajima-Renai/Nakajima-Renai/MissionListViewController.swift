@@ -46,9 +46,29 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
     
     //セルをタップ
     func tableView(table: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
+        
+        //画面遷移
         let storyboard = UIStoryboard(name: "MissionDetailViewController", bundle: NSBundle.mainBundle())
         let appInfoViewController: MissionDetailViewController = storyboard.instantiateViewControllerWithIdentifier("missiondetail") as! MissionDetailViewController
         self.navigationController?.pushViewController(appInfoViewController, animated: true)
+        
+        //詳細画面に表示させる内容を選択
+        var selectedText: String
+        selectedText = texts[indexPath.row]
+        NSLog("%@", selectedText)
+        
+        switch selectedText {
+        case "ミッション1":
+            appInfoViewController.text = "ミッション1"
+        case "ミッション2":
+            appInfoViewController.text = "ミッション2"
+        case "ミッション3":
+            appInfoViewController.text = "ミッション3"
+        default:
+            break // do nothing
+        }
+       
+        
         
     }
 }
