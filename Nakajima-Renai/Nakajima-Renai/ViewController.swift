@@ -3,7 +3,7 @@
 //  Nakajima-Renai
 //
 //  Created by Yuto Kumagai on 2016/06/11.
-//  Copyright © 2016年 Let'sGoShinGo. All rights reserved.
+//  Copyright © 2016年 Let'sGoShinGo. All rights reserved./Volumes/RAPPY
 //
 
 import UIKit
@@ -15,6 +15,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.title = "Home"
+        
+        //背景画像の設定
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "nakajima_TitleBackImage.png")?.drawInRect(self.view.bounds)
+        
+        let image: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        self.view.backgroundColor = UIColor(patternImage: image)
         
     }
 
