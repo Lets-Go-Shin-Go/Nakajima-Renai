@@ -84,21 +84,10 @@ class ResultListViewController: UIViewController, UITableViewDelegate, UITableVi
      */
     
     func tableView(table: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
-        print("Num: \(indexPath.row)")
-        /*
-         var num = 0
-         let storyboard = UIStoryboard(name: "DetailViewController", bundle: NSBundle.mainBundle())
-         let detailViewController: DetailViewController = storyboard.instantiateViewControllerWithIdentifier("detail") as! DetailViewController
-         
-         // appDelegateのspotsにおける選択されたスポットのインデックス番号を取得する
-         for data in appDelegate.spots{
-         if (data.name == selectedspots[indexPath.row].name){
-         detailViewController.spotNum = num
-         }
-         num++
-         }
-         
-         self.navigationController?.pushViewController(detailViewController, animated: true)*/
+
+        let storyboard = UIStoryboard(name: "ResultViewController", bundle: NSBundle.mainBundle())
+        let resultViewController: ResultViewController = storyboard.instantiateViewControllerWithIdentifier("result") as! ResultViewController
+        self.navigationController?.pushViewController(resultViewController, animated: true)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -122,6 +111,8 @@ class ResultListViewController: UIViewController, UITableViewDelegate, UITableVi
         
         return cell
     }
+    
+
     
     // linksの設定
     func setupLinks() {
