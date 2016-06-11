@@ -13,21 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var myNavigationController: UINavigationController?
-    
     var navigationController0: UINavigationController?
     var titleStoryboard: UIStoryboard = UIStoryboard()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        /*
-        let first: ViewController = ViewController()
-        myNavigationController = UINavigationController(rootViewController: first)
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = myNavigationController
-        self.window?.makeKeyAndVisible()
-        */
         
         //titleView
         titleStoryboard = UIStoryboard(name: "MissionListViewController", bundle: NSBundle.mainBundle())
@@ -38,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = navigationController0
         self.window?.makeKeyAndVisible()
         
-        //let firstView: ViewController = ViewController()
         
         return true
     }
