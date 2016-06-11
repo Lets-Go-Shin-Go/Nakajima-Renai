@@ -14,18 +14,25 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.title = "Home"
+        //ナビゲーションバーを非表示にする
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        //タイトルの設定（一応）
+        self.title = "Title"
         
         //背景画像の設定
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "nakajima_TitleBackImage.png")?.drawInRect(self.view.bounds)
-        
         let image: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
-        
         UIGraphicsEndImageContext()
-        
         self.view.backgroundColor = UIColor(patternImage: image)
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated) // No need for semicolon
+        
+        //ナビゲーションバーを非表示にする
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
