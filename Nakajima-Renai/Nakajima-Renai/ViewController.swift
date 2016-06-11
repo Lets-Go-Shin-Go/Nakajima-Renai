@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.title = "Home"
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +23,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func menuButton(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "MenuViewController", bundle: NSBundle.mainBundle())
+        let appInfoViewController: MenuViewController = storyboard.instantiateViewControllerWithIdentifier("menu") as! MenuViewController
+        self.navigationController?.pushViewController(appInfoViewController, animated: true)
+    }
 
 }
 
