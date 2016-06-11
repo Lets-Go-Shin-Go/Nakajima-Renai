@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C761EBF1D0C385F006AEA05 /* ResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C761EBE1D0C385F006AEA05 /* ResultListViewController.swift */; };
+		7C761EC11D0C3888006AEA05 /* ResultListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C761EC01D0C3888006AEA05 /* ResultListViewController.storyboard */; };
+		7C761EC31D0C38C5006AEA05 /* ResultListCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C761EC21D0C38C5006AEA05 /* ResultListCustomCell.swift */; };
+		7C761EC51D0C3901006AEA05 /* ResultListLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C761EC41D0C3901006AEA05 /* ResultListLink.swift */; };
 		7CC256A41D0BBB6B007E1720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC256A31D0BBB6B007E1720 /* AppDelegate.swift */; };
 		7CC256A61D0BBB6B007E1720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC256A51D0BBB6B007E1720 /* ViewController.swift */; };
 		7CC256A91D0BBB6B007E1720 /* TitleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256A71D0BBB6B007E1720 /* TitleViewController.storyboard */; };
@@ -59,6 +63,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C761EBE1D0C385F006AEA05 /* ResultListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultListViewController.swift; sourceTree = "<group>"; };
+		7C761EC01D0C3888006AEA05 /* ResultListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultListViewController.storyboard; sourceTree = "<group>"; };
+		7C761EC21D0C38C5006AEA05 /* ResultListCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultListCustomCell.swift; sourceTree = "<group>"; };
+		7C761EC41D0C3901006AEA05 /* ResultListLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultListLink.swift; sourceTree = "<group>"; };
 		7CC256A01D0BBB6B007E1720 /* Nakajima-Renai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nakajima-Renai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC256A31D0BBB6B007E1720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CC256A51D0BBB6B007E1720 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +172,9 @@
 				7CC256AA1D0BBB6B007E1720 /* Assets.xcassets */,
 				7CC256AC1D0BBB6B007E1720 /* LaunchScreen.storyboard */,
 				7CC256AF1D0BBB6B007E1720 /* Info.plist */,
+				7C761EBE1D0C385F006AEA05 /* ResultListViewController.swift */,
+				7C761EC21D0C38C5006AEA05 /* ResultListCustomCell.swift */,
+				7C761EC41D0C3901006AEA05 /* ResultListLink.swift */,
 			);
 			path = "Nakajima-Renai";
 			sourceTree = "<group>";
@@ -198,6 +209,7 @@
 				7CC256DC1D0BC16C007E1720 /* UserViewController.storyboard */,
 				7CC256DE1D0BC199007E1720 /* MissionDetailViewController.storyboard */,
 				7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */,
+				7C761EC01D0C3888006AEA05 /* ResultListViewController.storyboard */,
 			);
 			name = storyboard;
 			sourceTree = "<group>";
@@ -284,7 +296,7 @@
 				TargetAttributes = {
 					7CC2569F1D0BBB6B007E1720 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 565CL88MF2;
+						DevelopmentTeam = NR9AV5HS93;
 					};
 					7CC256B31D0BBB6B007E1720 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -338,6 +350,7 @@
 				7CC256E11D0BC1B0007E1720 /* LoginViewController.storyboard in Resources */,
 				7CC256D51D0BC0FA007E1720 /* ResultViewController.storyboard in Resources */,
 				7CC256DD1D0BC16C007E1720 /* UserViewController.storyboard in Resources */,
+				7C761EC11D0C3888006AEA05 /* ResultListViewController.storyboard in Resources */,
 				7CC256A91D0BBB6B007E1720 /* TitleViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,9 +380,12 @@
 				9CF9720F1D0BF13300BF1D0B /* MissionDetailViewController.swift in Sources */,
 				7CC256A61D0BBB6B007E1720 /* ViewController.swift in Sources */,
 				F57582AD1D0C215E00B7C29A /* FavoriteCustomCell.swift in Sources */,
+				7C761EC51D0C3901006AEA05 /* ResultListLink.swift in Sources */,
 				F57582B71D0C2D3C00B7C29A /* UserViewController.swift in Sources */,
+				7C761EC31D0C38C5006AEA05 /* ResultListCustomCell.swift in Sources */,
 				F57582AF1D0C215E00B7C29A /* Link.swift in Sources */,
 				F57582B51D0C2D1200B7C29A /* GroupViewController.swift in Sources */,
+				7C761EBF1D0C385F006AEA05 /* ResultListViewController.swift in Sources */,
 				F57582AE1D0C215E00B7C29A /* FavoriteViewController.swift in Sources */,
 				F559F9DE1D0BD76900BE1396 /* MenuViewController.swift in Sources */,
 				7CC256A41D0BBB6B007E1720 /* AppDelegate.swift in Sources */,

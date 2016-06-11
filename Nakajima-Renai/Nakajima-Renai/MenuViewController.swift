@@ -164,13 +164,10 @@ class MenuViewController: UIViewController {
             let viewController: FavoriteViewController = storyboard.instantiateViewControllerWithIdentifier("favorite") as! FavoriteViewController
             self.navigationController?.pushViewController(viewController, animated: true)
         case 3:
-            break
-            /*
-            //ResultViewへ遷移
-            let storyboard = UIStoryboard(name: "ResultViewController", bundle: NSBundle.mainBundle())
-            let viewController: ResultViewController = storyboard.instantiateViewControllerWithIdentifier("result") as! ResultViewController
+            //ResultListViewへ遷移
+            let storyboard = UIStoryboard(name: "ResultListViewController", bundle: NSBundle.mainBundle())
+            let viewController: ResultListViewController = storyboard.instantiateViewControllerWithIdentifier("resultlist") as! ResultListViewController
             self.navigationController?.pushViewController(viewController, animated: true)
-            */
         default:
             break
         }
