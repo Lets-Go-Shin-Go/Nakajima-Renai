@@ -18,7 +18,6 @@
 		7CC256D51D0BC0FA007E1720 /* ResultViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256D41D0BC0FA007E1720 /* ResultViewController.storyboard */; };
 		7CC256D71D0BC121007E1720 /* GroupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256D61D0BC121007E1720 /* GroupViewController.storyboard */; };
 		7CC256D91D0BC14B007E1720 /* MissionListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256D81D0BC14B007E1720 /* MissionListViewController.storyboard */; };
-		7CC256DB1D0BC15D007E1720 /* FavoriteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256DA1D0BC15D007E1720 /* FavoriteViewController.storyboard */; };
 		7CC256DD1D0BC16C007E1720 /* UserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256DC1D0BC16C007E1720 /* UserViewController.storyboard */; };
 		7CC256DF1D0BC199007E1720 /* MissionDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256DE1D0BC199007E1720 /* MissionDetailViewController.storyboard */; };
 		7CC256E11D0BC1B0007E1720 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */; };
@@ -31,6 +30,15 @@
 		F559F9E91D0BE9BE00BE1396 /* nakajima_button_result.png in Resources */ = {isa = PBXBuildFile; fileRef = F559F9E31D0BE9BE00BE1396 /* nakajima_button_result.png */; };
 		F559F9EA1D0BE9BE00BE1396 /* nakajima_MenuBackImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F559F9E41D0BE9BE00BE1396 /* nakajima_MenuBackImage.png */; };
 		F559F9EB1D0BE9BE00BE1396 /* nakajima_TitleBackImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F559F9E51D0BE9BE00BE1396 /* nakajima_TitleBackImage.png */; };
+		F57582A91D0C20EF00B7C29A /* FavoriteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57582A81D0C20EF00B7C29A /* FavoriteViewController.storyboard */; };
+		F57582AD1D0C215E00B7C29A /* FavoriteCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582AA1D0C215E00B7C29A /* FavoriteCustomCell.swift */; };
+		F57582AE1D0C215E00B7C29A /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582AB1D0C215E00B7C29A /* FavoriteViewController.swift */; };
+		F57582AF1D0C215E00B7C29A /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582AC1D0C215E00B7C29A /* Link.swift */; };
+		F57582B11D0C2A1000B7C29A /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F57582B01D0C2A1000B7C29A /* noImage.png */; };
+		F57582B31D0C2CED00B7C29A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582B21D0C2CED00B7C29A /* ResultViewController.swift */; };
+		F57582B51D0C2D1200B7C29A /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582B41D0C2D1200B7C29A /* GroupViewController.swift */; };
+		F57582B71D0C2D3C00B7C29A /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582B61D0C2D3C00B7C29A /* UserViewController.swift */; };
+		F57582B91D0C2E3E00B7C29A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582B81D0C2E3E00B7C29A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +76,6 @@
 		7CC256D41D0BC0FA007E1720 /* ResultViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultViewController.storyboard; sourceTree = "<group>"; };
 		7CC256D61D0BC121007E1720 /* GroupViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GroupViewController.storyboard; sourceTree = "<group>"; };
 		7CC256D81D0BC14B007E1720 /* MissionListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MissionListViewController.storyboard; sourceTree = "<group>"; };
-		7CC256DA1D0BC15D007E1720 /* FavoriteViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavoriteViewController.storyboard; sourceTree = "<group>"; };
 		7CC256DC1D0BC16C007E1720 /* UserViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserViewController.storyboard; sourceTree = "<group>"; };
 		7CC256DE1D0BC199007E1720 /* MissionDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MissionDetailViewController.storyboard; sourceTree = "<group>"; };
 		7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
@@ -81,6 +88,15 @@
 		F559F9E31D0BE9BE00BE1396 /* nakajima_button_result.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nakajima_button_result.png; sourceTree = "<group>"; };
 		F559F9E41D0BE9BE00BE1396 /* nakajima_MenuBackImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nakajima_MenuBackImage.png; sourceTree = "<group>"; };
 		F559F9E51D0BE9BE00BE1396 /* nakajima_TitleBackImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nakajima_TitleBackImage.png; sourceTree = "<group>"; };
+		F57582A81D0C20EF00B7C29A /* FavoriteViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavoriteViewController.storyboard; sourceTree = "<group>"; };
+		F57582AA1D0C215E00B7C29A /* FavoriteCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCustomCell.swift; sourceTree = "<group>"; };
+		F57582AB1D0C215E00B7C29A /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		F57582AC1D0C215E00B7C29A /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		F57582B01D0C2A1000B7C29A /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
+		F57582B21D0C2CED00B7C29A /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		F57582B41D0C2D1200B7C29A /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		F57582B61D0C2D3C00B7C29A /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		F57582B81D0C2E3E00B7C29A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +154,13 @@
 				F559F9DD1D0BD76900BE1396 /* MenuViewController.swift */,
 				9CF9720C1D0BEB3800BF1D0B /* MissionListViewController.swift */,
 				9CF9720E1D0BF13300BF1D0B /* MissionDetailViewController.swift */,
+				F57582AA1D0C215E00B7C29A /* FavoriteCustomCell.swift */,
+				F57582AB1D0C215E00B7C29A /* FavoriteViewController.swift */,
+				F57582AC1D0C215E00B7C29A /* Link.swift */,
+				F57582B21D0C2CED00B7C29A /* ResultViewController.swift */,
+				F57582B41D0C2D1200B7C29A /* GroupViewController.swift */,
+				F57582B61D0C2D3C00B7C29A /* UserViewController.swift */,
+				F57582B81D0C2E3E00B7C29A /* LoginViewController.swift */,
 				7CC256AA1D0BBB6B007E1720 /* Assets.xcassets */,
 				7CC256AC1D0BBB6B007E1720 /* LaunchScreen.storyboard */,
 				7CC256AF1D0BBB6B007E1720 /* Info.plist */,
@@ -171,7 +194,7 @@
 				7CC256D41D0BC0FA007E1720 /* ResultViewController.storyboard */,
 				7CC256D61D0BC121007E1720 /* GroupViewController.storyboard */,
 				7CC256D81D0BC14B007E1720 /* MissionListViewController.storyboard */,
-				7CC256DA1D0BC15D007E1720 /* FavoriteViewController.storyboard */,
+				F57582A81D0C20EF00B7C29A /* FavoriteViewController.storyboard */,
 				7CC256DC1D0BC16C007E1720 /* UserViewController.storyboard */,
 				7CC256DE1D0BC199007E1720 /* MissionDetailViewController.storyboard */,
 				7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */,
@@ -182,6 +205,7 @@
 		F559F9DF1D0BE94400BE1396 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F57582B01D0C2A1000B7C29A /* noImage.png */,
 				F559F9E01D0BE9BE00BE1396 /* nakajima_button_favorite.png */,
 				F559F9E11D0BE9BE00BE1396 /* nakajima_button_group.png */,
 				F559F9E21D0BE9BE00BE1396 /* nakajima_button_mission.png */,
@@ -304,11 +328,12 @@
 				7CC256D31D0BC0A7007E1720 /* MenuViewController.storyboard in Resources */,
 				F559F9EB1D0BE9BE00BE1396 /* nakajima_TitleBackImage.png in Resources */,
 				7CC256DF1D0BC199007E1720 /* MissionDetailViewController.storyboard in Resources */,
+				F57582A91D0C20EF00B7C29A /* FavoriteViewController.storyboard in Resources */,
+				F57582B11D0C2A1000B7C29A /* noImage.png in Resources */,
 				7CC256AB1D0BBB6B007E1720 /* Assets.xcassets in Resources */,
 				F559F9E81D0BE9BE00BE1396 /* nakajima_button_mission.png in Resources */,
 				F559F9E71D0BE9BE00BE1396 /* nakajima_button_group.png in Resources */,
 				7CC256D71D0BC121007E1720 /* GroupViewController.storyboard in Resources */,
-				7CC256DB1D0BC15D007E1720 /* FavoriteViewController.storyboard in Resources */,
 				F559F9E91D0BE9BE00BE1396 /* nakajima_button_result.png in Resources */,
 				7CC256E11D0BC1B0007E1720 /* LoginViewController.storyboard in Resources */,
 				7CC256D51D0BC0FA007E1720 /* ResultViewController.storyboard in Resources */,
@@ -338,11 +363,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57582B91D0C2E3E00B7C29A /* LoginViewController.swift in Sources */,
 				9CF9720F1D0BF13300BF1D0B /* MissionDetailViewController.swift in Sources */,
 				7CC256A61D0BBB6B007E1720 /* ViewController.swift in Sources */,
+				F57582AD1D0C215E00B7C29A /* FavoriteCustomCell.swift in Sources */,
+				F57582B71D0C2D3C00B7C29A /* UserViewController.swift in Sources */,
+				F57582AF1D0C215E00B7C29A /* Link.swift in Sources */,
+				F57582B51D0C2D1200B7C29A /* GroupViewController.swift in Sources */,
+				F57582AE1D0C215E00B7C29A /* FavoriteViewController.swift in Sources */,
 				F559F9DE1D0BD76900BE1396 /* MenuViewController.swift in Sources */,
 				7CC256A41D0BBB6B007E1720 /* AppDelegate.swift in Sources */,
 				9CF9720D1D0BEB3800BF1D0B /* MissionListViewController.swift in Sources */,
+				F57582B31D0C2CED00B7C29A /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

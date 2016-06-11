@@ -154,21 +154,15 @@ class MenuViewController: UIViewController {
             self.navigationController?.pushViewController(viewController, animated: true)
             */
         case 1:
-            break
-            /*
             //MissionViewへ遷移
-            let storyboard = UIStoryboard(name: "MissionViewController", bundle: NSBundle.mainBundle())
-            let viewController: MissionViewController = storyboard.instantiateViewControllerWithIdentifier("missionlist") as! MissonViewController
+            let storyboard = UIStoryboard(name: "MissionListViewController", bundle: NSBundle.mainBundle())
+            let viewController: MissionListViewController = storyboard.instantiateViewControllerWithIdentifier("missionlist") as! MissionListViewController
             self.navigationController?.pushViewController(viewController, animated: true)
-            */
         case 2:
-            break
-            /*
             //FavoriteViewへ遷移
             let storyboard = UIStoryboard(name: "FavoriteViewController", bundle: NSBundle.mainBundle())
             let viewController: FavoriteViewController = storyboard.instantiateViewControllerWithIdentifier("favorite") as! FavoriteViewController
             self.navigationController?.pushViewController(viewController, animated: true)
-            */
         case 3:
             break
             /*
