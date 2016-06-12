@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var navigationController0: UINavigationController?
     var titleStoryboard: UIStoryboard = UIStoryboard()
     //チェックをつけるか判断する
-    var checkmark = [0,0,0,0,0,0,0,0,0]
+    var checkmark = [0,0,0,0]
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
