@@ -26,6 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         titleStoryboard = UIStoryboard(name: "TitleViewController", bundle: NSBundle.mainBundle())
         let ViewController: UIViewController = titleStoryboard.instantiateViewControllerWithIdentifier("title") as UIViewController
         self.navigationController0 = UINavigationController(rootViewController: ViewController)
+/*
+        //titleView
+        titleStoryboard = UIStoryboard(name: "TitleViewController", bundle: NSBundle.mainBundle())
+        let ViewController: UIViewController = titleStoryboard.instantiateViewControllerWithIdentifier("title") as UIViewController
+        self.navigationController0 = UINavigationController(rootViewController: ViewController)
+  */
+   
+        
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = navigationController0

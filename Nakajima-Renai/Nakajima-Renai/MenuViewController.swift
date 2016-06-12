@@ -147,13 +147,11 @@ class MenuViewController: UIViewController {
     internal func onClickButton(sender: UIButton){
         switch sender.tag{
         case 0:
-            break
-            /*
             //GroupViewへ遷移
             let storyboard = UIStoryboard(name: "GroupViewController", bundle: NSBundle.mainBundle())
             let viewController: GroupViewController = storyboard.instantiateViewControllerWithIdentifier("group") as! GroupViewController
             self.navigationController?.pushViewController(viewController, animated: true)
-            */
+
         case 1:
             //MissionViewへ遷移
             let storyboard = UIStoryboard(name: "MissionListViewController", bundle: NSBundle.mainBundle())
