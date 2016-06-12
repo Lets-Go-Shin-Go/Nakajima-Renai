@@ -63,6 +63,11 @@
 		F575830A1D0C676200B7C29A /* morosan.png in Resources */ = {isa = PBXBuildFile; fileRef = F57583051D0C676200B7C29A /* morosan.png */; };
 		F575830B1D0C676200B7C29A /* singo.png in Resources */ = {isa = PBXBuildFile; fileRef = F57583061D0C676200B7C29A /* singo.png */; };
 		F575830C1D0C676200B7C29A /* yohei.png in Resources */ = {isa = PBXBuildFile; fileRef = F57583071D0C676200B7C29A /* yohei.png */; };
+		F57DC77F1D0D134A00CEBEBF /* kodai_d.png in Resources */ = {isa = PBXBuildFile; fileRef = F57DC77A1D0D134A00CEBEBF /* kodai_d.png */; };
+		F57DC7801D0D134A00CEBEBF /* kumagai_d.png in Resources */ = {isa = PBXBuildFile; fileRef = F57DC77B1D0D134A00CEBEBF /* kumagai_d.png */; };
+		F57DC7811D0D134A00CEBEBF /* morosan_d.png in Resources */ = {isa = PBXBuildFile; fileRef = F57DC77C1D0D134A00CEBEBF /* morosan_d.png */; };
+		F57DC7821D0D134A00CEBEBF /* singo_d.png in Resources */ = {isa = PBXBuildFile; fileRef = F57DC77D1D0D134A00CEBEBF /* singo_d.png */; };
+		F57DC7831D0D134A00CEBEBF /* yohei_d.png in Resources */ = {isa = PBXBuildFile; fileRef = F57DC77E1D0D134A00CEBEBF /* yohei_d.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +150,11 @@
 		F57583051D0C676200B7C29A /* morosan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = morosan.png; sourceTree = "<group>"; };
 		F57583061D0C676200B7C29A /* singo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singo.png; sourceTree = "<group>"; };
 		F57583071D0C676200B7C29A /* yohei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yohei.png; sourceTree = "<group>"; };
+		F57DC77A1D0D134A00CEBEBF /* kodai_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kodai_d.png; sourceTree = "<group>"; };
+		F57DC77B1D0D134A00CEBEBF /* kumagai_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kumagai_d.png; sourceTree = "<group>"; };
+		F57DC77C1D0D134A00CEBEBF /* morosan_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = morosan_d.png; sourceTree = "<group>"; };
+		F57DC77D1D0D134A00CEBEBF /* singo_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singo_d.png; sourceTree = "<group>"; };
+		F57DC77E1D0D134A00CEBEBF /* yohei_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yohei_d.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +294,11 @@
 				F57583051D0C676200B7C29A /* morosan.png */,
 				F57583061D0C676200B7C29A /* singo.png */,
 				F57583071D0C676200B7C29A /* yohei.png */,
+				F57DC77A1D0D134A00CEBEBF /* kodai_d.png */,
+				F57DC77B1D0D134A00CEBEBF /* kumagai_d.png */,
+				F57DC77C1D0D134A00CEBEBF /* morosan_d.png */,
+				F57DC77D1D0D134A00CEBEBF /* singo_d.png */,
+				F57DC77E1D0D134A00CEBEBF /* yohei_d.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -395,6 +410,7 @@
 			files = (
 				7C761EDE1D0CF02C006AEA05 /* Nheart02.png in Resources */,
 				9CF972291D0CDD9C00BF1D0B /* dance.jpg in Resources */,
+				F57DC7811D0D134A00CEBEBF /* morosan_d.png in Resources */,
 				7C761ED01D0C5106006AEA05 /* heart02.png in Resources */,
 				7CC256D91D0BC14B007E1720 /* MissionListViewController.storyboard in Resources */,
 				F559F9EA1D0BE9BE00BE1396 /* nakajima_MenuBackImage.png in Resources */,
@@ -428,8 +444,12 @@
 				F575830B1D0C676200B7C29A /* singo.png in Resources */,
 				7C761EDF1D0CF02C006AEA05 /* Nheart03.png in Resources */,
 				7CC256DD1D0BC16C007E1720 /* UserViewController.storyboard in Resources */,
+				F57DC77F1D0D134A00CEBEBF /* kodai_d.png in Resources */,
+				F57DC7821D0D134A00CEBEBF /* singo_d.png in Resources */,
 				7C761EC11D0C3888006AEA05 /* ResultListViewController.storyboard in Resources */,
 				7CC256A91D0BBB6B007E1720 /* TitleViewController.storyboard in Resources */,
+				F57DC7801D0D134A00CEBEBF /* kumagai_d.png in Resources */,
+				F57DC7831D0D134A00CEBEBF /* yohei_d.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

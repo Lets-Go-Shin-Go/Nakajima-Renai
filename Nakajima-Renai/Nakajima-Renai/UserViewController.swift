@@ -21,10 +21,11 @@ class UserViewController: UIViewController {
     
     var ID = -1
     
+    let pic:[String] = ["kumagai_d.png","yohei_d.png","singo_d.png","kodai_d.png","morosan_d.png"]
     let userName: [String] = ["熊谷優斗","新保遥平","中進吾","佐藤孝大","諸原聖"]
-    let nickname: [String] = ["くま","しんぽ","リーゼント","こーだい","モロ"]
-    let Age: [String] = ["21","21","21","21","23"]
-    let Hobby: [String] = ["--","--","--","ゲーム","--"]
+    let nickname: [String] = ["くま","しんぽ","リーゼントくん","こーだい","もろちゃん"]
+    let Age: [String] = ["22","22","21","21","23"]
+    let Hobby: [String] = ["ラットプルダウン","合コン","家庭菜園","ゲーム","秘密"]
     
     
     override func viewDidLoad() {
@@ -56,6 +57,7 @@ class UserViewController: UIViewController {
         super.viewWillAppear(animated) // No need for semicolon
         
         if ID < 5 && ID >= 0{
+            mainPic.image = UIImage(named: pic[ID])
             name.text = userName[ID]
             name2.text = nickname[ID]
             age.text = Age[ID]
