@@ -50,6 +50,13 @@
 		F57582B51D0C2D1200B7C29A /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582B41D0C2D1200B7C29A /* GroupViewController.swift */; };
 		F57582B71D0C2D3C00B7C29A /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582B61D0C2D3C00B7C29A /* UserViewController.swift */; };
 		F57582B91D0C2E3E00B7C29A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57582B81D0C2E3E00B7C29A /* LoginViewController.swift */; };
+		F57583011D0C669600B7C29A /* heart_off.png in Resources */ = {isa = PBXBuildFile; fileRef = F57582FF1D0C669600B7C29A /* heart_off.png */; };
+		F57583021D0C669600B7C29A /* heart_on.png in Resources */ = {isa = PBXBuildFile; fileRef = F57583001D0C669600B7C29A /* heart_on.png */; };
+		F57583081D0C676200B7C29A /* kodai.png in Resources */ = {isa = PBXBuildFile; fileRef = F57583031D0C676200B7C29A /* kodai.png */; };
+		F57583091D0C676200B7C29A /* kumagai.png in Resources */ = {isa = PBXBuildFile; fileRef = F57583041D0C676200B7C29A /* kumagai.png */; };
+		F575830A1D0C676200B7C29A /* morosan.png in Resources */ = {isa = PBXBuildFile; fileRef = F57583051D0C676200B7C29A /* morosan.png */; };
+		F575830B1D0C676200B7C29A /* singo.png in Resources */ = {isa = PBXBuildFile; fileRef = F57583061D0C676200B7C29A /* singo.png */; };
+		F575830C1D0C676200B7C29A /* yohei.png in Resources */ = {isa = PBXBuildFile; fileRef = F57583071D0C676200B7C29A /* yohei.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +126,13 @@
 		F57582B41D0C2D1200B7C29A /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		F57582B61D0C2D3C00B7C29A /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		F57582B81D0C2E3E00B7C29A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F57582FF1D0C669600B7C29A /* heart_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_off.png; sourceTree = "<group>"; };
+		F57583001D0C669600B7C29A /* heart_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_on.png; sourceTree = "<group>"; };
+		F57583031D0C676200B7C29A /* kodai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kodai.png; sourceTree = "<group>"; };
+		F57583041D0C676200B7C29A /* kumagai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kumagai.png; sourceTree = "<group>"; };
+		F57583051D0C676200B7C29A /* morosan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = morosan.png; sourceTree = "<group>"; };
+		F57583061D0C676200B7C29A /* singo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singo.png; sourceTree = "<group>"; };
+		F57583071D0C676200B7C29A /* yohei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yohei.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +259,13 @@
 				7C761ECC1D0C5106006AEA05 /* heart01.png */,
 				7C761ECD1D0C5106006AEA05 /* heart02.png */,
 				7C761ECE1D0C5106006AEA05 /* heart03.png */,
+				F57582FF1D0C669600B7C29A /* heart_off.png */,
+				F57583001D0C669600B7C29A /* heart_on.png */,
+				F57583031D0C676200B7C29A /* kodai.png */,
+				F57583041D0C676200B7C29A /* kumagai.png */,
+				F57583051D0C676200B7C29A /* morosan.png */,
+				F57583061D0C676200B7C29A /* singo.png */,
+				F57583071D0C676200B7C29A /* yohei.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -317,7 +338,7 @@
 				TargetAttributes = {
 					7CC2569F1D0BBB6B007E1720 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = NR9AV5HS93;
+						DevelopmentTeam = 565CL88MF2;
 					};
 					7CC256B31D0BBB6B007E1720 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -360,7 +381,10 @@
 				F559F9EA1D0BE9BE00BE1396 /* nakajima_MenuBackImage.png in Resources */,
 				F559F9E61D0BE9BE00BE1396 /* nakajima_button_favorite.png in Resources */,
 				7CC256AE1D0BBB6B007E1720 /* LaunchScreen.storyboard in Resources */,
+				F57583081D0C676200B7C29A /* kodai.png in Resources */,
+				F575830A1D0C676200B7C29A /* morosan.png in Resources */,
 				7C761ED11D0C5106006AEA05 /* heart03.png in Resources */,
+				F575830C1D0C676200B7C29A /* yohei.png in Resources */,
 				7CC256D31D0BC0A7007E1720 /* MenuViewController.storyboard in Resources */,
 				F559F9EB1D0BE9BE00BE1396 /* nakajima_TitleBackImage.png in Resources */,
 				7CC256DF1D0BC199007E1720 /* MissionDetailViewController.storyboard in Resources */,
@@ -373,10 +397,14 @@
 				F559F9E81D0BE9BE00BE1396 /* nakajima_button_mission.png in Resources */,
 				7C761ECF1D0C5106006AEA05 /* heart01.png in Resources */,
 				F559F9E71D0BE9BE00BE1396 /* nakajima_button_group.png in Resources */,
+				F57583021D0C669600B7C29A /* heart_on.png in Resources */,
+				F57583091D0C676200B7C29A /* kumagai.png in Resources */,
 				7CC256D71D0BC121007E1720 /* GroupViewController.storyboard in Resources */,
+				F57583011D0C669600B7C29A /* heart_off.png in Resources */,
 				F559F9E91D0BE9BE00BE1396 /* nakajima_button_result.png in Resources */,
 				7CC256E11D0BC1B0007E1720 /* LoginViewController.storyboard in Resources */,
 				7CC256D51D0BC0FA007E1720 /* ResultViewController.storyboard in Resources */,
+				F575830B1D0C676200B7C29A /* singo.png in Resources */,
 				7CC256DD1D0BC16C007E1720 /* UserViewController.storyboard in Resources */,
 				7C761EC11D0C3888006AEA05 /* ResultListViewController.storyboard in Resources */,
 				7CC256A91D0BBB6B007E1720 /* TitleViewController.storyboard in Resources */,

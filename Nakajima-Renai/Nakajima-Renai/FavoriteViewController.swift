@@ -13,8 +13,8 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     
-    let picName: [String] = ["noImage.png"]
-    let userName: [String] = ["A","B","C","D"]
+    let picName: [String] = ["kumagai.png","yohei.png","singo.png","kodai.png","morosan.png"]
+    let userName: [String] = ["熊谷優斗","新保遥平","中進吾","佐藤孝大","諸原聖"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +57,7 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
     
     //cellの高さ指定
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 115
+        return 80
     }
     
     /*
@@ -77,20 +77,12 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(table: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
         print("Num: \(indexPath.row)")
-        /*
-        var num = 0
-        let storyboard = UIStoryboard(name: "DetailViewController", bundle: NSBundle.mainBundle())
-        let detailViewController: DetailViewController = storyboard.instantiateViewControllerWithIdentifier("detail") as! DetailViewController
+        let storyboard = UIStoryboard(name: "UserViewController", bundle: NSBundle.mainBundle())
+        let userViewController: UserViewController = storyboard.instantiateViewControllerWithIdentifier("user") as! UserViewController
         
-        // appDelegateのspotsにおける選択されたスポットのインデックス番号を取得する
-        for data in appDelegate.spots{
-            if (data.name == selectedspots[indexPath.row].name){
-                detailViewController.spotNum = num
-            }
-            num++
-        }
+        userViewController.ID = indexPath.row
         
-        self.navigationController?.pushViewController(detailViewController, animated: true)*/
+        self.navigationController?.pushViewController(userViewController, animated: true)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -112,6 +104,11 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
             cell.layoutMargins = UIEdgeInsetsZero
         }
         
+        // 選択された時の背景色
+        let cellSelectedBgView = UIView()
+        cellSelectedBgView.backgroundColor = UIColor(red: 1, green: 0.9, blue: 0.9, alpha: 1)
+        cell.selectedBackgroundView = cellSelectedBgView
+        
         return cell
     }
     
@@ -119,7 +116,7 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
     func setupLinks() {
         
         for i in 0..<userName.count {
-            let ll = Link(picName: picName[0], userName: userName[i])
+            let ll = Link(picName: picName[i], userName: userName[i])
             links.append(ll)
         }
     }
