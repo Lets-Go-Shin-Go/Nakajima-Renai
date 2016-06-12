@@ -15,7 +15,7 @@ class MissionDetailViewController: UIViewController {
     @IBOutlet weak var details: UITextView!
     var text : String?//ミッション名
     var checkmark : Int = 0//配列の場所
-    
+    let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,11 +71,15 @@ class MissionDetailViewController: UIViewController {
     }
     
     @IBAction func overcome(sender: AnyObject) {
-        let storyboard = UIStoryboard(name: "MissionListViewController", bundle: NSBundle.mainBundle())
+        /*let storyboard = UIStoryboard(name: "MissionListViewController", bundle: NSBundle.mainBundle())
         let appInfoViewController: MissionListViewController = storyboard.instantiateViewControllerWithIdentifier("missionlist") as! MissionListViewController
         self.navigationController?.pushViewController(appInfoViewController, animated: true)
         
-        appInfoViewController.checkmark[checkmark] = 1
+        appInfoViewController.checkmark[checkmark] = 1*/
+    
+       
+        appDelegate.checkmark[checkmark]=1
+        navigationController?.popViewControllerAnimated(true)
         
     }
     

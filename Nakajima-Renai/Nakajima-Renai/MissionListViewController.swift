@@ -20,6 +20,14 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
         tableView.delegate = self
         tableView.dataSource = self
         
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated) // No need for semicolon
+        
+        self.tableView.reloadData()
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -30,9 +38,10 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
     // セルに表示するテキスト
     let texts = ["ミッション1", "ミッション2", "ミッション3","ミッション4", "ミッション5", "ミッション6","ミッション7", "ミッション8", "ミッション9"]
     
-    //チェックをつけるか判断する
-    var checkmark = [0,0,0,0,0,0,0,0,0]
+    /*//チェックをつけるか判断する
+    var checkmark = [0,0,0,0,0,0,0,0,0]*/
     
+    let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     
     // セルの行数
@@ -47,7 +56,7 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
         
         cell.textLabel?.font = UIFont(name: "Arial",size:40)
         cell.textLabel?.text = texts[indexPath.row]
-        if(checkmark[indexPath.row]==1){
+        if(appDelegate.checkmark[indexPath.row]==1){
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
         }
         
