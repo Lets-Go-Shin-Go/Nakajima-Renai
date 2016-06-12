@@ -68,6 +68,7 @@
 		F57DC7811D0D134A00CEBEBF /* morosan_d.png in Resources */ = {isa = PBXBuildFile; fileRef = F57DC77C1D0D134A00CEBEBF /* morosan_d.png */; };
 		F57DC7821D0D134A00CEBEBF /* singo_d.png in Resources */ = {isa = PBXBuildFile; fileRef = F57DC77D1D0D134A00CEBEBF /* singo_d.png */; };
 		F57DC7831D0D134A00CEBEBF /* yohei_d.png in Resources */ = {isa = PBXBuildFile; fileRef = F57DC77E1D0D134A00CEBEBF /* yohei_d.png */; };
+		F57DC7851D0D16A200CEBEBF /* Failed.png in Resources */ = {isa = PBXBuildFile; fileRef = F57DC7841D0D16A200CEBEBF /* Failed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,7 @@
 		F57DC77C1D0D134A00CEBEBF /* morosan_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = morosan_d.png; sourceTree = "<group>"; };
 		F57DC77D1D0D134A00CEBEBF /* singo_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singo_d.png; sourceTree = "<group>"; };
 		F57DC77E1D0D134A00CEBEBF /* yohei_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yohei_d.png; sourceTree = "<group>"; };
+		F57DC7841D0D16A200CEBEBF /* Failed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Failed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +301,7 @@
 				F57DC77C1D0D134A00CEBEBF /* morosan_d.png */,
 				F57DC77D1D0D134A00CEBEBF /* singo_d.png */,
 				F57DC77E1D0D134A00CEBEBF /* yohei_d.png */,
+				F57DC7841D0D16A200CEBEBF /* Failed.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				7CC256D31D0BC0A7007E1720 /* MenuViewController.storyboard in Resources */,
 				F559F9EB1D0BE9BE00BE1396 /* nakajima_TitleBackImage.png in Resources */,
 				7CC256DF1D0BC199007E1720 /* MissionDetailViewController.storyboard in Resources */,
+				F57DC7851D0D16A200CEBEBF /* Failed.png in Resources */,
 				9CF972251D0CDD9500BF1D0B /* center.jpg in Resources */,
 				F57582A91D0C20EF00B7C29A /* FavoriteViewController.storyboard in Resources */,
 				9CF972271D0CDD9800BF1D0B /* toufu.jpg in Resources */,
