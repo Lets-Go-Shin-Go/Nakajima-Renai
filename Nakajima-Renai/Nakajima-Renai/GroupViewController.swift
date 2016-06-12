@@ -12,8 +12,8 @@ class GroupViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var tableview: UITableView!
     
     let missionTime = ["9:00", "10:00", "11:00", "12:00"]
-    let partnerName = ["中","熊谷","皀","新保"]
-    let yourName = ["佐藤"]
+    let partnerName = ["中","熊谷","佐藤","新保"]
+    let yourName = ["皀"]
     let groupName = ["A","B","C","D"]
     
     override func viewDidLoad() {
@@ -57,7 +57,7 @@ class GroupViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     //cellの高さ指定
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 115
+        return 80
     }
     
     /*
