@@ -28,7 +28,7 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
         
         self.tableView.reloadData()
         
-        tableView.rowHeight = 100
+        tableView.rowHeight = 80
 
     }
     
@@ -56,7 +56,7 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
         
-        cell.textLabel?.font = UIFont(name: "Arial",size:35)
+        cell.textLabel?.font = UIFont(name: "Arial",size:17)
         cell.textLabel?.text = texts[indexPath.row]
         if(appDelegate.checkmark[indexPath.row]==1){
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
