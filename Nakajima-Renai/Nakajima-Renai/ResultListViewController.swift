@@ -21,7 +21,7 @@ class ResultListViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @IBOutlet weak var tableView: UITableView!
     
-    let picName: [String] = ["noImage.png"]
+    let picName: [String] = ["singo.png","kodai.png"]
     let userName: [String] = ["リーゼントくん","こーだい"]
     
     override func viewDidLoad() {
@@ -65,7 +65,7 @@ class ResultListViewController: UIViewController, UITableViewDelegate, UITableVi
     
     //cellの高さ指定
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 115
+        return 80
     }
     
     /*
@@ -124,7 +124,7 @@ class ResultListViewController: UIViewController, UITableViewDelegate, UITableVi
     func setupLinks() {
         
         for i in 0..<userName.count {
-            let ll = ResultListLink(picName: picName[0], userName: userName[i])
+            let ll = ResultListLink(picName: picName[i], userName: userName[i])
             links.append(ll)
         }
     }

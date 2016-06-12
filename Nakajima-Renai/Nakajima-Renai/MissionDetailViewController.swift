@@ -12,7 +12,6 @@ class MissionDetailViewController: UIViewController {
     
     @IBOutlet weak var content: UILabel!
     @IBOutlet weak var imview: UIImageView!
-    @IBOutlet weak var details: UITextView!
     //@IBOutlet weak var button: UIButton!
     
     
@@ -23,10 +22,9 @@ class MissionDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        content.text = "ミッション内容"
+        //content.text = "ミッション内容"
         self.title = text
-        content.font = UIFont(name: "Arial",size:30)
-        details.font = UIFont(name: "Arial",size:25)
+        content.font = UIFont(name: "Arial",size:17)
         
         //サイズ
         
@@ -47,25 +45,25 @@ class MissionDetailViewController: UIViewController {
             imview.frame = CGRect(x: 0,y: 0,width: img!.size.width,height: img!.size.height)
             imview.image = img
             //説明文
-            details.text = "堂守豆腐店でオカラコロッケを買い、お互いの子供の頃のことを話せ"
+            content.text = "堂守豆腐店でオカラコロッケを買い、お互いの子供の頃のことを話せ"
         case 1:
             let img = UIImage(named:"sushi.jpg")
             imview.frame = CGRect(x: 0,y: 0,width: img!.size.width,height: img!.size.height)
             imview.image = img
             //説明文
-            details.text = "シゲちゃん寿司で寿司を食べながら、お互いの家族のことについて話せ"
+            content.text = "シゲちゃん寿司で寿司を食べながら、お互いの家族のことについて話せ"
         case 2:
             let img = UIImage(named:"dance.jpg")
             imview.frame = CGRect(x: 0,y: 0,width: img!.size.width,height: img!.size.height)
             imview.image = img
             //説明文
-            details.text = "中島れんばいふれあいセンターに行き、二人で一緒にソーラン節を踊れ"
+            content.text = "中島れんばいふれあいセンターに行き、二人で一緒にソーラン節を踊れ"
         case 3:
             let img = UIImage(named:"center.jpg")
             imview.frame = CGRect(x: 0,y: 0,width: img!.size.width,height: img!.size.height)
             imview.image = img
             //説明文
-            details.text = "中島れんばいふれあいセンターに行き、お互いに好きな曲を歌え"
+            content.text = "中島れんばいふれあいセンターに行き、お互いに好きな曲を歌え"
         default:
             break // do nothing
         }

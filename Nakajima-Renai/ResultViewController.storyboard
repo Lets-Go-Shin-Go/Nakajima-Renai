@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Result View Controller-->
@@ -17,17 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-ul-lnh">
-                                <rect key="frame" x="0.0" y="344" width="375" height="120"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-ul-lnh">
+                                <rect key="frame" x="0.0" y="395" width="375" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9sc-ul-lnh" secondAttribute="height" multiplier="30:12" id="1ie-VZ-S2x"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="8NW-pf-4Ez">
-                                <rect key="frame" x="35" y="84" width="305" height="194"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="8NW-pf-4Ez">
+                                <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8NW-pf-4Ez" secondAttribute="height" multiplier="1:1" id="JUn-7p-DVA"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8NW-pf-4Ez" firstAttribute="leading" secondItem="pOo-DA-3kv" secondAttribute="leading" id="79c-yv-gW2"/>
+                            <constraint firstItem="9sc-ul-lnh" firstAttribute="top" secondItem="8NW-pf-4Ez" secondAttribute="bottom" id="IYS-bJ-Izv"/>
+                            <constraint firstAttribute="trailing" secondItem="9sc-ul-lnh" secondAttribute="trailing" id="NHf-e1-hNn"/>
+                            <constraint firstItem="8NW-pf-4Ez" firstAttribute="top" secondItem="N3n-fu-ZwY" secondAttribute="bottom" id="Q1m-tQ-V8I"/>
+                            <constraint firstAttribute="trailing" secondItem="8NW-pf-4Ez" secondAttribute="trailing" id="UwK-ZV-B6r"/>
+                            <constraint firstItem="9sc-ul-lnh" firstAttribute="leading" secondItem="pOo-DA-3kv" secondAttribute="leading" id="vGU-IX-jca"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="mainImage" destination="8NW-pf-4Ez" id="4PS-mt-jJe"/>
                         <outlet property="resultImage" destination="9sc-ul-lnh" id="gS3-QE-wT9"/>
                     </connections>
                 </viewController>

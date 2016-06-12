@@ -11,15 +11,28 @@ import UIKit
 class ResultViewController: UIViewController{
     
     var flag: Int?
+    @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var resultImage: UIImageView!
     
         override func viewDidLoad() {
+            
+            //背景画像の設定
+            let myImage = UIImage(named: "nakajima_MenuBackImage.png")
+            let myImageView = UIImageView()
+            myImageView.image = myImage!
+            myImageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
+            self.view.addSubview(myImageView)
+            self.view.sendSubviewToBack(myImageView)
+            
             if(flag == 0){
                 createParticles()
+                mainImage.image = UIImage(named: "singo_d.png")
                 resultImage.image = UIImage(named: "Congratulations")
                 
             }else{
                 createUnhappyParticles()
+                mainImage.image = UIImage(named: "kodai_d.png")
+                resultImage.image = UIImage(named: "Failed")
             }
             
         }
