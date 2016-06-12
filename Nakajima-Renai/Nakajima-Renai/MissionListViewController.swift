@@ -27,6 +27,8 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
         super.viewWillAppear(animated) // No need for semicolon
         
         self.tableView.reloadData()
+        
+        tableView.rowHeight = 100
 
     }
     
@@ -36,7 +38,7 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     // セルに表示するテキスト
-    let texts = ["ミッション1", "ミッション2", "ミッション3","ミッション4", "ミッション5", "ミッション6","ミッション7", "ミッション8", "ミッション9"]
+    let texts = ["コロッケミッション", "お寿司ミッション", "ソーランミッション","カラオケミッション"]
     
     /*//チェックをつけるか判断する
     var checkmark = [0,0,0,0,0,0,0,0,0]*/
@@ -54,7 +56,7 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
         
-        cell.textLabel?.font = UIFont(name: "Arial",size:40)
+        cell.textLabel?.font = UIFont(name: "Arial",size:35)
         cell.textLabel?.text = texts[indexPath.row]
         if(appDelegate.checkmark[indexPath.row]==1){
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
@@ -76,31 +78,16 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
         
         switch indexPath.row {
         case 0:
-            appInfoViewController.text = "ミッション1"
+            appInfoViewController.text = texts[0]
             appInfoViewController.checkmark = indexPath.row
         case 1:
-            appInfoViewController.text = "ミッション2"
+            appInfoViewController.text = texts[1]
             appInfoViewController.checkmark = indexPath.row
         case 2:
-            appInfoViewController.text = "ミッション3"
+            appInfoViewController.text = texts[2]
             appInfoViewController.checkmark = indexPath.row
         case 3:
-            appInfoViewController.text = "ミッション4"
-            appInfoViewController.checkmark = indexPath.row
-        case 4:
-            appInfoViewController.text = "ミッション5"
-            appInfoViewController.checkmark = indexPath.row
-        case 5:
-            appInfoViewController.text = "ミッション6"
-            appInfoViewController.checkmark = indexPath.row
-        case 6:
-            appInfoViewController.text = "ミッション7"
-            appInfoViewController.checkmark = indexPath.row
-        case 7:
-            appInfoViewController.text = "ミッション8"
-            appInfoViewController.checkmark = indexPath.row
-        case 8:
-            appInfoViewController.text = "ミッション9"
+            appInfoViewController.text = texts[3]
             appInfoViewController.checkmark = indexPath.row
         default:
             break // do nothing

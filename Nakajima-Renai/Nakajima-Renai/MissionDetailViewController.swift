@@ -13,6 +13,9 @@ class MissionDetailViewController: UIViewController {
     @IBOutlet weak var content: UILabel!
     @IBOutlet weak var imview: UIImageView!
     @IBOutlet weak var details: UITextView!
+    //@IBOutlet weak var button: UIButton!
+    
+    
     var text : String?//ミッション名
     var checkmark : Int = 0//配列の場所
     let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -22,6 +25,11 @@ class MissionDetailViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         content.text = "ミッション内容"
         self.title = text
+        content.font = UIFont(name: "Arial",size:30)
+        details.font = UIFont(name: "Arial",size:25)
+        
+        //サイズ
+        
         
         
         //背景画像の設定

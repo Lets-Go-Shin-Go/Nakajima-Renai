@@ -17,13 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WoL-OG-vRY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WoL-OG-vRY">
                                 <rect key="frame" x="0.0" y="0.0" width="387" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WoL-OG-vRY" secondAttribute="trailing" id="TnI-f0-MOq"/>
+                            <constraint firstItem="WoL-OG-vRY" firstAttribute="top" secondItem="3lk-iS-wbW" secondAttribute="top" id="kRF-CU-buI"/>
+                            <constraint firstItem="WoL-OG-vRY" firstAttribute="leading" secondItem="3lk-iS-wbW" secondAttribute="leading" id="w70-DZ-iEx"/>
+                            <constraint firstItem="vOx-r2-w5t" firstAttribute="top" secondItem="WoL-OG-vRY" secondAttribute="bottom" id="ymk-qY-jys"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="tableView" destination="WoL-OG-vRY" id="TQ7-rK-eZ1"/>
