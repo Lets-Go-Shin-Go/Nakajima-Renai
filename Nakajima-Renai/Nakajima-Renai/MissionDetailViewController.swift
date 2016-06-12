@@ -12,7 +12,6 @@ class MissionDetailViewController: UIViewController {
     
     @IBOutlet weak var content: UILabel!
     @IBOutlet weak var imview: UIImageView!
-    @IBOutlet weak var details: UITextView!
     //@IBOutlet weak var button: UIButton!
     
     
@@ -26,7 +25,6 @@ class MissionDetailViewController: UIViewController {
         //content.text = "ミッション内容"
         self.title = text
         content.font = UIFont(name: "Arial",size:17)
-        details.font = UIFont(name: "Arial",size:25)
         
         //サイズ
         
