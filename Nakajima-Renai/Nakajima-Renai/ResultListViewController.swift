@@ -22,7 +22,7 @@ class ResultListViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var tableView: UITableView!
     
     let picName: [String] = ["noImage.png"]
-    let userName: [String] = ["A","B","C","D"]
+    let userName: [String] = ["リーゼントくん","こーだい"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,6 +88,12 @@ class ResultListViewController: UIViewController, UITableViewDelegate, UITableVi
         let storyboard = UIStoryboard(name: "ResultViewController", bundle: NSBundle.mainBundle())
         let resultViewController: ResultViewController = storyboard.instantiateViewControllerWithIdentifier("result") as! ResultViewController
         self.navigationController?.pushViewController(resultViewController, animated: true)
+        
+        if(indexPath.row == 0){
+            resultViewController.flag = 0
+        }else{
+            resultViewController.flag = 1
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
