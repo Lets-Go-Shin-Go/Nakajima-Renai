@@ -19,7 +19,7 @@ class GroupViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Group Member"
+        self.title = "グループ"
         
         self.setupLinks()  // Link情報を読み込んで変数に設定
         
