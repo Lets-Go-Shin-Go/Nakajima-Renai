@@ -38,7 +38,7 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     // セルに表示するテキスト
-    let texts = ["コロッケミッション", "お寿司ミッション", "ソーランミッション","カラオケミッション"]
+    let texts = ["豆腐屋が作るコロッケを食べよう", "お寿司を食べながら互いのことを話そう", "体を動かしてアピールしよう","共通する好きな曲を探そう"]
     
     /*//チェックをつけるか判断する
     var checkmark = [0,0,0,0,0,0,0,0,0]*/
@@ -58,6 +58,7 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
         
         cell.textLabel?.font = UIFont(name: "Arial",size:17)
         cell.textLabel?.text = texts[indexPath.row]
+        cell.textLabel?.numberOfLines = 0
         if(appDelegate.checkmark[indexPath.row]==1){
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
         }

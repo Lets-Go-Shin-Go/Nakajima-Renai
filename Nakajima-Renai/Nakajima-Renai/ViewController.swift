@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         //ナビゲーションバーを非表示にする
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         //タイトルの設定（一応）
-        self.title = "Title"
+        self.title = "タイトル"
         
         //背景画像の設定
         
