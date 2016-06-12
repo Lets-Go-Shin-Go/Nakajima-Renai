@@ -30,6 +30,10 @@
 		7CC256E11D0BC1B0007E1720 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */; };
 		9CF9720D1D0BEB3800BF1D0B /* MissionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF9720C1D0BEB3800BF1D0B /* MissionListViewController.swift */; };
 		9CF9720F1D0BF13300BF1D0B /* MissionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF9720E1D0BF13300BF1D0B /* MissionDetailViewController.swift */; };
+		9CF972251D0CDD9500BF1D0B /* center.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CF972241D0CDD9500BF1D0B /* center.jpg */; };
+		9CF972271D0CDD9800BF1D0B /* toufu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CF972261D0CDD9800BF1D0B /* toufu.jpg */; };
+		9CF972291D0CDD9C00BF1D0B /* dance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CF972281D0CDD9C00BF1D0B /* dance.jpg */; };
+		9CF9722B1D0CDDAF00BF1D0B /* sushi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CF9722A1D0CDDAF00BF1D0B /* sushi.jpg */; };
 		F559F9DE1D0BD76900BE1396 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F559F9DD1D0BD76900BE1396 /* MenuViewController.swift */; };
 		F559F9E61D0BE9BE00BE1396 /* nakajima_button_favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = F559F9E01D0BE9BE00BE1396 /* nakajima_button_favorite.png */; };
 		F559F9E71D0BE9BE00BE1396 /* nakajima_button_group.png in Resources */ = {isa = PBXBuildFile; fileRef = F559F9E11D0BE9BE00BE1396 /* nakajima_button_group.png */; };
@@ -95,6 +99,10 @@
 		7CC256E01D0BC1B0007E1720 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		9CF9720C1D0BEB3800BF1D0B /* MissionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionListViewController.swift; sourceTree = "<group>"; };
 		9CF9720E1D0BF13300BF1D0B /* MissionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionDetailViewController.swift; sourceTree = "<group>"; };
+		9CF972241D0CDD9500BF1D0B /* center.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = center.jpg; sourceTree = "<group>"; };
+		9CF972261D0CDD9800BF1D0B /* toufu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toufu.jpg; sourceTree = "<group>"; };
+		9CF972281D0CDD9C00BF1D0B /* dance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dance.jpg; sourceTree = "<group>"; };
+		9CF9722A1D0CDDAF00BF1D0B /* sushi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sushi.jpg; sourceTree = "<group>"; };
 		F559F9DD1D0BD76900BE1396 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F559F9E01D0BE9BE00BE1396 /* nakajima_button_favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nakajima_button_favorite.png; sourceTree = "<group>"; };
 		F559F9E11D0BE9BE00BE1396 /* nakajima_button_group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nakajima_button_group.png; sourceTree = "<group>"; };
@@ -223,6 +231,10 @@
 		F559F9DF1D0BE94400BE1396 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9CF972241D0CDD9500BF1D0B /* center.jpg */,
+				9CF9722A1D0CDDAF00BF1D0B /* sushi.jpg */,
+				9CF972261D0CDD9800BF1D0B /* toufu.jpg */,
+				9CF972281D0CDD9C00BF1D0B /* dance.jpg */,
 				F57582B01D0C2A1000B7C29A /* noImage.png */,
 				F559F9E01D0BE9BE00BE1396 /* nakajima_button_favorite.png */,
 				F559F9E11D0BE9BE00BE1396 /* nakajima_button_group.png */,
@@ -342,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF972291D0CDD9C00BF1D0B /* dance.jpg in Resources */,
 				7C761ED01D0C5106006AEA05 /* heart02.png in Resources */,
 				7CC256D91D0BC14B007E1720 /* MissionListViewController.storyboard in Resources */,
 				F559F9EA1D0BE9BE00BE1396 /* nakajima_MenuBackImage.png in Resources */,
@@ -351,8 +364,11 @@
 				7CC256D31D0BC0A7007E1720 /* MenuViewController.storyboard in Resources */,
 				F559F9EB1D0BE9BE00BE1396 /* nakajima_TitleBackImage.png in Resources */,
 				7CC256DF1D0BC199007E1720 /* MissionDetailViewController.storyboard in Resources */,
+				9CF972251D0CDD9500BF1D0B /* center.jpg in Resources */,
 				F57582A91D0C20EF00B7C29A /* FavoriteViewController.storyboard in Resources */,
+				9CF972271D0CDD9800BF1D0B /* toufu.jpg in Resources */,
 				F57582B11D0C2A1000B7C29A /* noImage.png in Resources */,
+				9CF9722B1D0CDDAF00BF1D0B /* sushi.jpg in Resources */,
 				7CC256AB1D0BBB6B007E1720 /* Assets.xcassets in Resources */,
 				F559F9E81D0BE9BE00BE1396 /* nakajima_button_mission.png in Resources */,
 				7C761ECF1D0C5106006AEA05 /* heart01.png in Resources */,

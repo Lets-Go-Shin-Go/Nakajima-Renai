@@ -16,6 +16,7 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.title = "ミッション"
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -27,7 +28,11 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     // セルに表示するテキスト
-    let texts = ["ミッション1", "ミッション2", "ミッション3"]
+    let texts = ["ミッション1", "ミッション2", "ミッション3","ミッション4", "ミッション5", "ミッション6","ミッション7", "ミッション8", "ミッション9"]
+    
+    //チェックをつけるか判断する
+    var checkmark = [0,0,0,0,0,0,0,0,0]
+    
     
     
     // セルの行数
@@ -40,7 +45,12 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
         
+        cell.textLabel?.font = UIFont(name: "Arial",size:40)
         cell.textLabel?.text = texts[indexPath.row]
+        if(checkmark[indexPath.row]==1){
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+        }
+        
         return cell
     }
     
@@ -53,21 +63,40 @@ class MissionListViewController: UIViewController, UITableViewDataSource, UITabl
         self.navigationController?.pushViewController(appInfoViewController, animated: true)
         
         //詳細画面に表示させる内容を選択
-        var selectedText: String
-        selectedText = texts[indexPath.row]
-        NSLog("%@", selectedText)
         
-        switch selectedText {
-        case "ミッション1":
+        
+        switch indexPath.row {
+        case 0:
             appInfoViewController.text = "ミッション1"
-        case "ミッション2":
+            appInfoViewController.checkmark = indexPath.row
+        case 1:
             appInfoViewController.text = "ミッション2"
-        case "ミッション3":
+            appInfoViewController.checkmark = indexPath.row
+        case 2:
             appInfoViewController.text = "ミッション3"
+            appInfoViewController.checkmark = indexPath.row
+        case 3:
+            appInfoViewController.text = "ミッション4"
+            appInfoViewController.checkmark = indexPath.row
+        case 4:
+            appInfoViewController.text = "ミッション5"
+            appInfoViewController.checkmark = indexPath.row
+        case 5:
+            appInfoViewController.text = "ミッション6"
+            appInfoViewController.checkmark = indexPath.row
+        case 6:
+            appInfoViewController.text = "ミッション7"
+            appInfoViewController.checkmark = indexPath.row
+        case 7:
+            appInfoViewController.text = "ミッション8"
+            appInfoViewController.checkmark = indexPath.row
+        case 8:
+            appInfoViewController.text = "ミッション9"
+            appInfoViewController.checkmark = indexPath.row
         default:
             break // do nothing
         }
-       
+        
         
         
     }
